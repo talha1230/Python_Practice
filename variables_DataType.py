@@ -1,128 +1,197 @@
-# function for variables
+# Function to demonstrate the use of variables
 def variables():
-	# Variables
-	name="Muhammad "
-	Gender="Male "
-	Age = 22
-	Country=" Pakistan "
-	print(name + Gender + str(Age) + Country)
+    # Variables
+    name = "Muhammad "  # String variable
+    Gender = "Male "  # String variable
+    Age = 22  # Integer variable
+    Country = " Pakistan "  # String variable
+    
+    # Concatenating strings and converting integer to string
+    print(name + Gender + str(Age) + Country)
+
+# Calling the function to demonstrate variable usage
 variables()
-# Function within a function
+
 # Global and Local Variables
-name="Muhammad" # Global Variable
-def greating():
-    x="Ali" # Local Variable
-    print("Hello "+x)
-greating()
-print("Hello "+name)
-print (type(name))
+name = "Muhammad"  # Global Variable
+
+def greeting():
+    x = "Ali"  # Local Variable
+    # Local variable 'x' is used only within this function
+    print("Hello " + x)
+
+# Calling the function to demonstrate local variable usage
+greeting()
+
+# Accessing the global variable
+# Global variables can be accessed anywhere in the code
+print("Hello " + name)
+
+# Printing the type of the variable 'name'
+# Demonstrating the use of type() function to check variable type
+print(type(name))
+
 # Data Types
-# tuple 
-# Tuple is a collection which is ordered and unchangeable, allows duplicated members,FOr example, you can use a tuple to store a list of names but you can't change it.
+
+# Tuple
+# Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+# For example, you can use a tuple to store a list of names but you can't change it.
 def Data_tuple():
-    x=("Banana", "Apple","Banana ", "Orange")
-    print   (x)
-    print (type(x))
+    x = ("Banana", "Apple", "Banana", "Orange")  # Defining a tuple
+    print(x)  # Printing the tuple
+    print(type(x))  # Printing the type of x, which is tuple
+
+# Calling the function to demonstrate tuple usage
 Data_tuple()
 
-#list 
-# List is a collection which is ordered and changeable, allows duplicated members,For example, you can use a list to store a list of names.
+# List
+# List is a collection which is ordered and changeable. Allows duplicate members.
+# For example, you can use a list to store a list of names.
 def Data_list():
-   y=["Banana", "Apple", "Orange"]
-   print (y)
-   print (type(y))
+    y = ["Banana", "Apple", "Orange"]  # Defining a list
+    print(y)  # Printing the list
+    print(type(y))  # Printing the type of y, which is list
+
+# Calling the function to demonstrate list usage
 Data_list()
-#dictionary
-# Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.For example, you can use a dictionary to store the number of times that each word appears in a piece of text.
+
+# Dictionary
+# Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
+# For example, you can use a dictionary to store the number of times that each word appears in a piece of text.
 def Data_Dict():
-     x= {"name":"Muhammad", "LastName":"Talha","Age":20}
-     index=x["name"]
-     print(index)
-     print(x)
-     print(type(x))
+    x = {"name": "Muhammad", "LastName": "Talha", "Age": 20}  # Defining a dictionary
+    index = x["name"]  # Accessing an item by key
+    print(index)  # Printing the value of the key "name"
+    print(x)  # Printing the dictionary
+    print(type(x))  # Printing the type of x, which is dictionary
+
+# Calling the function to demonstrate dictionary usage
 Data_Dict()
-#set
+
+# Set
 # Set is a collection which is unordered and unindexed. No duplicate members.
 def Data_set():
-    x={"Banana", "Apple", "Grapes"} 
-    print(x)
-    print(type(x))
+    x = {"Banana", "Apple", "Grapes"}  # Defining a set
+    print(x)  # Printing the set
+    print(type(x))  # Printing the type of x, which is set
+
+# Calling the function to demonstrate set usage
 Data_set()
-#frozenset
+
+# Frozenset
 # Frozenset is a collection which is unordered and unindexed. No duplicate members.
-# The difference between a frozenset and a set is that a frozenset is immutable, meaning that it cannot be changed after it is created.but set can be changed
+# The difference between a frozenset and a set is that a frozenset is immutable, meaning that it cannot be changed after it is created, but a set can be changed.
 def Data_frozenSet():
-    x=frozenset({"ALi", "Ahmed", "Talha"})
-    print(x) 
-    print(type(x))
+    x = frozenset({"Ali", "Ahmed", "Talha"})  # Defining a frozenset
+    print(x)  # Printing the frozenset
+    print(type(x))  # Printing the type of x, which is frozenset
+
+# Calling the function to demonstrate frozenset usage
 Data_frozenSet()
-#bool
+
+# Boolean
 # Boolean is a data type that can only take the values True or False. For example, you can use a boolean to store whether a statement is true or false.
 def Data_bool():
-    x=True
-    print(x)
-    print(type(x)) 
+    x = True  # Defining a boolean variable
+    print(x)  # Printing the boolean variable
+    print(type(x))  # Printing the type of x, which is bool
+
+# Calling the function to demonstrate boolean usage
 Data_bool()
-#Numbers
+
+# Numbers
+# Demonstrating different types of numbers: integer, float, and complex
 def Data_numbers():
-    x=1
-    y=2.8
-    z=1j
+    x = 1  # Integer
+    y = 2.8  # Float
+    z = 1j  # Complex number
     print("Numbers:")
-    print(type(x))
-    print(type(y))
-    print(type(z))  
+    print(type(x))  # Printing the type of x, which is int
+    print(type(y))  # Printing the type of y, which is float
+    print(type(z))  # Printing the type of z, which is complex
+
+# Calling the function to demonstrate different number types
 Data_numbers()
-#changing data type
+
+# Changing Data Type
+# Demonstrating how to change data types
 def Data_change():
-    x=1
-    y=2.8
-    z=1j
-    a=float(x)
-    b=int(y)
-    c=complex(x)
+    x = 1  # Integer
+    y = 2.8  # Float
+    z = 1j  # Complex number
+    a = float(x)  # Converting integer to float
+    b = int(y)  # Converting float to integer
+    c = complex(x)  # Converting integer to complex
     print("Changing Data Types:")
-    print(a)
-    print(b)
-    print(c)
-    print(type(a))
-    print(type(b))
-    print(type(c))  
+    print(a)  # Printing the float
+    print(b)  # Printing the integer
+    print(c)  # Printing the complex number
+    print(type(a))  # Printing the type of a, which is float
+    print(type(b))  # Printing the type of b, which is int
+    print(type(c))  # Printing the type of c, which is complex
+
+# Calling the function to demonstrate changing data types
 Data_change()
-#Random Number
+
+# Random Number
+# Demonstrating how to generate a random number
 import random
+
 def Data_random():
     print("Random Number:")
-    x = random.randrange(0, 100)
+    x = random.randrange(0, 100)  # Generating a random number between 0 and 99
     if x % 2 == 0:
-         print("Even")
+        print("Even")  # Printing if the number is even
     else:
-         print("Odd")
-    print(x)
+        print("Odd")  # Printing if the number is odd
+    print(x)  # Printing the random number
+
+# Calling the function to demonstrate random number generation
 Data_random()
-#Casting
+
+# Casting
+# Demonstrating type casting in Python
 def Data_casting():
     print("Python Casting:")
-    x=int(1)   # x will be 1
-    y=int(2.8) # y will be 2
-    z=int("3") # z will be 3
-    a=str("s1") # a will be 's1'
-    print(x)
-    print(y)
-    print(z)
-    print(a)
-    print(type(x))
-    print(type(y))
-    print(type(z))
-    print(type(a))
+    x = int(1)  # Casting float to int
+    y = int(2.8)  # Casting float to int
+    z = int("3")  # Casting string to int
+    a = str("s1")  # Casting string to string (no change)
+    print(x)  # Printing the integer
+    print(y)  # Printing the integer
+    print(z)  # Printing the integer
+    print(a)  # Printing the string
+    print(type(x))  # Printing the type of x, which is int
+    print(type(y))  # Printing the type of y, which is int
+    print(type(z))  # Printing the type of z, which is int
+    print(type(a))  # Printing the type of a, which is str
+
+# Calling the function to demonstrate type casting
 Data_casting()
-#Slicing Strings
+
+# Slicing Strings
+# Demonstrating how to slice strings in Python
 def Data_slicing():
     print("Slicing Strings:")
-    a= "Hello, World!"
-    print(a[2:5])  #this will print "llo" because it will start from 2 and end at 5 and 5th index will not be included because it is exclusive
-    print(a[:5])   #this will print "Hello" because it will start from 0 and end at 5 and 5th index will not be included because it is exclusive
-    print(a[2:])   #this will print "llo, World!" because it will start from 2 and end at the end of the string
-    print(a[-5:-2]) #this will print "orl" because it will start from -5 and end at -2 and -2nd index will not be included because it is exclusive
+    a = "Hello, World!"  # Defining a string
+    print(a[2:5])  # Slicing from index 2 to 5 (not including 5)
+    print(a[:5])  # Slicing from start to index 5 (not including 5)
+    print(a[2:])  # Slicing from index 2 to end
+    print(a[-5:-2])  # Slicing from -5 to -2 (not including -2)
+
+# Calling the function to demonstrate string slicing
 Data_slicing()
-#to push the code on github;use the following commands: git add ., git commit -m "message", git push
+
+# Modify Strings
+# Demonstrating how to modify strings in Python
+def Data_modify():
+    print("Modify Strings:")
+    a = " Hello, World!"  # Defining a string
+    print(a.upper())  # Converting to uppercase
+    print(a.lower())  # Converting to lowercase
+    print(a.strip())  # Removing whitespace from beginning and end
+    print(a.replace("H", "J"))  # Replacing H with J
+    print(a.split(","))  # Splitting the string into a list
+
+# Calling the function to demonstrate string modification
+Data_modify()
