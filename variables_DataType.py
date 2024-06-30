@@ -125,3 +125,4 @@ def Data_slicing():
     print(a[2:])   #this will print "llo, World!" because it will start from 2 and end at the end of the string
     print(a[-5:-2]) #this will print "orl" because it will start from -5 and end at -2 and -2nd index will not be included because it is exclusive
 Data_slicing()
+#to push the code on github;use the following commands: git add ., git commit -m "message", git push
