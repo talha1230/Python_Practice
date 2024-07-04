@@ -195,3 +195,33 @@ def Data_modify():
 
 # Calling the function to demonstrate string modification
 Data_modify()
+#string concatenation
+def Data_contatenation():
+    print ("String Concatenation:")
+    a="Talha"
+    b="Muhammad"
+    c=a+ " " + b
+    print(c)    
+Data_contatenation()
+#String Format
+def Data_format():
+    print("String Format:")
+    age = 22
+    price=55
+    txt = f"My name is Muhammad, and I am {age}" #here f is used to format the string
+    bill=f"To buy this product you need {price} rupees"# mostly string format is used where we need to print the value of variable in the string,such as in the bill
+    additonal=f"Additional charges are {price+5}"
+    print(txt)
+    print(bill)
+    print(additonal)
+Data_format()
+#Escape Characters
+def Data_escape():
+    print("Escape Characters:")
+    txt = "We are the so-called \"Vikings\" from the north." #using escape character to print double quotes
+    print(txt)
+Data_escape()
+#String Methods
+
+
+
